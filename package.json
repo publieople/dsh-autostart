@@ -1,0 +1,42 @@
+{
+  "name": "dsh-autostart",
+  "description": "DSH (DeepSeek Harness) plugin: autostart dsh web via a systemd user service on WSL/Linux. 让 dsh web 在 WSL/Linux 开机后由 systemd 自动拉起。",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/publieople/dsh-autostart.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "autostart",
+    "startup",
+    "systemd",
+    "wsl",
+    "linux",
+    "开机自启"
+  ],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "scripts": {
+    "test": "node --test test/unit.test.js"
+  }
+}
