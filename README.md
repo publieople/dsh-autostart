@@ -73,6 +73,8 @@ WSL 发行版默认"按需启动"（首次 wsl 命令才拉起）。要让 Windo
 
 或把该 .cmd 的快捷方式放进 Windows 启动文件夹（shell:startup）。
 
+> 若插件无法探测 WSL 发行版名，.cmd 里会留 `<DISTRO>` 占位符，请手动替换（`wsl.exe -l -q` 可查看）。
+
 ## 故障排查
 
 | 现象 | 原因与处理 |
